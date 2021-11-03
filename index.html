@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Video na pagina -->
+    <video src="video/background.mp4" autoplay loop muted></video>
+    <!-- Lista não ordenada -->
+    <ul>
+        <h1>Jogo da Velha</h1>
+        <p>Sejam Bem-vindos(as) ao nosso Jogo da Velha! Para iniciar, basta clicar em "Começar".</p>
+        <!-- É usado para agrupar elementos como por exemplo label -->
+        <fieldset>
+            <!-- Rotulo para fieldset -->
+            <legend><strong>Nomes dos jogadores (opcional)</strong></legend>
+            <label for="jogador1" id="label1"><strong>Jogador 1 - <strong class="cor-X">X</strong>:</strong></label>
+            <input type="text" id="nomeJ1" autocomplete="off">
+            <br>
+            <label for="jogador1"><strong>Jogador 2 - <strong class="cor-O">O</strong>:</strong></label>
+            <input type="text" id="nomeJ2" autocomplete="off">
+            <p id="rodada"></p>
+        </fieldset>
+        <br>
+        <!-- Botoes para reiniciar e começar o jogo -->
+        <button onclick="reiniciaJogo()" id="reinicia">Reiniciar</button>
+        <button onclick="verificaForm()" id="inicia">Começar</button>
+        <br>
+        <!-- Paragrafo que indica a vez do jogador -->
+        <p id="vez"></p>
+        <br>
+        <!-- Div que armazena outras divs, cada div é uma casa e cada casa chama uma função do JS -->
+        <div class="tabuleiro" id="tab">
+            <div class="estrutura" id="a1" onclick="casaA1()">
+            </div>
+            <div class="estrutura" id="a2" onclick="casaA2()">
+            </div>
+            <div class="estrutura" id="a3" onclick="casaA3()">
+            </div>
+            <div class="estrutura" id="b1" onclick="casaB1()">
+            </div>
+            <div class="estrutura" id="b2" onclick="casaB2()">
+            </div>
+            <div class="estrutura" id="b3" onclick="casaB3()">
+            </div>
+            <div class="estrutura" id="c1" onclick="casaC1()">
+            </div>
+            <div class="estrutura" id="c2" onclick="casaC2()">
+            </div>
+            <div class="estrutura" id="c3" onclick="casaC3()">
+            </div>
+        </div>
+    </ul>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/* Deixa o video no background */
+video {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* especifica a familia de fontes */
+body {
+    font-family: cursive;
+    font-size: 13pt;
+}
+
+h1 {
+    color: white;
+    position: relative;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+p {
+    color: white;
+    position: relative;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Elemento para agrupar o nome dos jogadores */
+fieldset {
+    color: white;
+    position: relative;
+    width: 350px;
+    height: 120px;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* ajuste de espaçamento */
+#label1 {
+    padding-right: 1.4px;
+}
+
+/* alteração no cursor */
+button {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Espaçamento entre os botões */
+#reinicia {
+    margin-right: 240px;
+}
+
+/* paragrafo que informa a vez do jogador */
+#vez {
+    display: none;
+    position: relative;
+}
+
+/* div que agrupa as casas do jogo da velha */
+.tabuleiro {
+    display: none;
+    position: relative;
+    width: 500px;
+}
+
+/* div que ajusta as casas do jogo da velha */
+.estrutura {
+    border: 5px solid;
+    border-color: #00CD00;
+    cursor: pointer;
+    float: left;
+    font-size: 100px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Seletores responsáveis por remover as bordas, para formar troca estrutura do jogo da velha */
+/* Seletor que remove as bordas de cima */
+#a1, #a2, #a3 {
+    border-top: 0px;
+}
+
+/* Seletor que remove as bordas da direita */
+#a3, #b3, #c3 {
+    border-right: 0px;
+}
+
+/* Seletor que remove as bordas de baixo */
+#c1, #c2, #c3 {
+    border-bottom: 0px;
+}
+
+/* Seletor que remove as bordas da esquerda */
+#a1, #b1, #c1 {
+    border-left: 0px;
+}
+
+/* alteração de coloração conforme a mobilidade do cursor */
+div:hover {
+    background-color: #EEEE00;
+}
+
+.cor-X {
+    color: #FF3030;
+}
+
+.cor-O {
+    color: #1E90FF;
+}
