@@ -6,7 +6,9 @@ Jogo da Velha simples. Projeto feito como trabalho da faculdade. Pretendo refaz√
 
 ## Layout
 
-![Imagem demonstrativa do projeto](demo/layout.png)
+<div align="center">
+<img src="demo/layout.png" alt="Imagem demonstrativa"></img>
+</div>
 
 ## Tecnologias utilizadas
 
